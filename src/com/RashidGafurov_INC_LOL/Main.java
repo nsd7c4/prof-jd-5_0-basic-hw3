@@ -38,15 +38,10 @@ public class Main {
         //Assignment 4
         int deliveryDistance = 95;
         int deliveryDays = 1;
-        if (deliveryDistance > 20) {
-            deliveryDays += 1;
-        }
-        if (deliveryDistance > 60) {
-            deliveryDays += 1;
-        }
-        if (deliveryDistance > 100) {
-            deliveryDays += 1;
-        }
+        if (deliveryDistance > 20) deliveryDays += 1;
+        if (deliveryDistance > 60) deliveryDays += 1;
+        if (deliveryDistance > 100) deliveryDays += 1;
+
         if (deliveryDays < 4) {
             System.out.println("Your card will be delivered in " + deliveryDays + " day(s).");
         } else {
@@ -55,7 +50,7 @@ public class Main {
 
         //Assignment 5
         int monthNumber = 12;
-        switch (monthNumber){
+        switch (monthNumber) {
             case 12:
             case 1:
             case 2:
