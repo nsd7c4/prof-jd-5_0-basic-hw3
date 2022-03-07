@@ -29,10 +29,28 @@ public class Main {
 
         //Assignment 3
         int leapYearCheck = 2012;
-        if ((leapYearCheck % 4 == 0 && leapYearCheck % 100 != 0) || leapYearCheck % 400 ==0){
-            System.out.println(leapYearCheck + " is a leap year");
+        if ((leapYearCheck % 4 == 0 && leapYearCheck % 100 != 0) || leapYearCheck % 400 == 0) {
+            System.out.println(leapYearCheck + " is a leap year!");
         } else {
-            System.out.println(leapYearCheck + " is a not leap year");
+            System.out.println(leapYearCheck + " is a not leap year!");
+        }
+
+        //Assignment 4
+        int deliveryDistance = 95;
+        int deliveryDays = 1;
+        if (deliveryDistance > 20) {
+            deliveryDays += 1;
+        }
+        if (deliveryDistance > 60) {
+            deliveryDays += 1;
+        }
+        if (deliveryDistance > 100) {
+            deliveryDays += 1;
+        }
+        if (deliveryDays < 4) {
+            System.out.println("Your card will be delivered in " + deliveryDays + " day(s).");
+        } else {
+            System.out.println("We cant deliver to your address!");
         }
     }
 }
