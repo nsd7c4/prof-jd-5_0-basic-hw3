@@ -7,7 +7,7 @@ public class Main {
         int clientOS = 1;
         if (clientOS == 1) {
             System.out.println("Please install Android App, link here");
-        } else {
+        } else if (clientOS == 0){
             System.out.println("Please install iOS App, link here");
         }
 
@@ -19,7 +19,7 @@ public class Main {
             } else {
                 System.out.println("Please install Lite Android App, link here");
             }
-        } else {
+        } else if (clientOS == 0){
             if (clientDeviceYear >= 2015) {
                 System.out.println("Please install iOS App, link here");
             } else {
